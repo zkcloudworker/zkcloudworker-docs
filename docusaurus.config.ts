@@ -140,15 +140,15 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
+          title: "zkCloudWorker",
           items: [
             {
-              label: "Discord",
-              href: "https://discord.gg/j8XpQ3pr",
+              label: "GitHub",
+              href: "https://github.com/zkcloudworker",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/dfst_io",
+              href: "https://x.com/zkCloudWorker",
             },
           ],
         },
@@ -167,11 +167,7 @@ const config: Config = {
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/dfst_io",
-            },
-            {
-              label: "dfst.io",
-              href: "https://dfst.io",
+              href: "https://x.com/dfst_io",
             },
           ],
         },
