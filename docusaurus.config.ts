@@ -108,7 +108,12 @@ const config: Config = {
         */
         {
           to: "api",
-          label: "API Reference",
+          label: "zkCloudWorker API",
+          position: "left",
+        },
+        {
+          to: "minatokens-api",
+          label: "Minatokens API",
           position: "left",
         },
         {
