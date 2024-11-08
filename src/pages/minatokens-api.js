@@ -20,7 +20,7 @@ export default function ApiDocs() {
     <Layout title="API Documentation">
       <GlobalStyle />
       <SwaggerUI
-        url="minatokens-api.yaml"
+        url="/minatokens-api.yaml"
         defaultModelsExpandDepth={-1}
         docExpansion="list"
         displayOperationId={false}
