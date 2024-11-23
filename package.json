@@ -17,8 +17,8 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.6.1",
-    "@docusaurus/preset-classic": "^3.6.1",
+    "@docusaurus/core": "^3.6.3",
+    "@docusaurus/preset-classic": "^3.6.3",
     "@mdx-js/react": "^3.1.0",
     "clsx": "^1.2.1",
     "prism-react-renderer": "^2.4.0",
@@ -28,12 +28,12 @@
     "swagger-ui-react": "^5.18.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.6.1",
-    "@docusaurus/tsconfig": "^3.6.1",
-    "@docusaurus/types": "^3.6.1",
+    "@docusaurus/module-type-aliases": "^3.6.3",
+    "@docusaurus/tsconfig": "^3.6.3",
+    "@docusaurus/types": "^3.6.3",
     "docusaurus-plugin-typedoc-api": "^4.4.0",
     "typedoc": "^0.26.11",
-    "typescript": "~5.6.3",
+    "typescript": "~5.7.2",
     "yaml-loader": "^0.8.1"
   },
   "browserslist": {
@@ -51,5 +51,5 @@
   "engines": {
     "node": ">=18.0"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.5.2"
 }

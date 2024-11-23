@@ -16,7 +16,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "dfstio", // Usually your GitHub org/user name.
+  organizationName: "zkcloudworker", // Usually your GitHub org/user name.
   projectName: "zkcloudworker", // Usually your repo name.
 
   onBrokenLinks: "throw",
@@ -64,7 +64,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/zkcloudworker-transparent-full.png",
 
     algolia: {
       // The application ID provided by Algolia
@@ -99,21 +99,14 @@ const config: Config = {
           label: "Docs",
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
-        /*
-        {
-          href: 'https://lib.minanft.io',
-          label: 'API',
-          position: 'left',
-        },
-        */
         {
           to: "api",
           label: "zkCloudWorker API",
           position: "left",
         },
         {
-          to: "minatokens-api",
-          label: "Minatokens API",
+          to: "https://docs.minatokens.com",
+          label: "MinaTokens API",
           position: "left",
         },
         {
@@ -139,8 +132,12 @@ const config: Config = {
               to: "/",
             },
             {
-              label: "API Reference",
+              label: "zkCloudWorker API",
               to: "api",
+            },
+            {
+              label: "MinaTokens API",
+              to: "https://docs.minatokens.com",
             },
           ],
         },
