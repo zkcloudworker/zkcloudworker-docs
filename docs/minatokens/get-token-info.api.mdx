@@ -1,0 +1,72 @@
+---
+id: get-token-info
+title: "Retrieve information about a fungible token."
+description: "The `info` endpoint retrieves detailed information about a specific fungible token deployed on the Mina blockchain."
+sidebar_label: "Retrieve information about a fungible token."
+hide_title: true
+hide_table_of_contents: true
+api: eJzVWFFvGzcM/isCX/Zyttt0e9i9pV27GcW2IE76sCxA6RPtU6OTrhLPiWv4vw/Une1z7HRBiqJIXuKTqI/kJ1KktALGeYT8CsZu5kOFbLyD6ww0xSKYOn3mcFGS+mjczH9U5HTtjWMViIOhBUWlidFY0srsMBROfcMKVaypMDNTqFnj5mZqSbG/Iac01dYvSSvvFJek/jQO1dT64qYo0bjhvw4y8DWFBDfWkMOc+ELWiqmQQaDPDUV+7fUS8lX6NIE05BwayqDwjsmxTGFdW1MkoNGnKB6tIBYlVSi/eFkT5OCnn6jgDrcFuoJk66nWgWIUWuogJrGhmFb2Z3dIkYNxczhGIrbCys+S0y0VYmnAgoewXmfAhq2gbF09b/08w4BVhPVahALF2rvYmnHy4oX829c2aYqCYpw1drNTaJPapLK3U0P4Hlxl7edYQwaoK+PedE7uBNLwvc/k9Gu06ApKGIx20tS1XUIGJp5hE0knZgtTod3qmSyrqbeQwYKCRFuy/z0t/8BYQgZNMO1cFHL6urYL09Blkks/PxwF2kzFLk2+dzzsaHwUXOPM54aU0eTYzAyFPeCEd3QznmJrAtq3dW9Hn4xpIgdkH3aQe1Gxw3VNNaUAGbSxDDlo30wtHdXUUjttQR7W14+4J2titComjEP+t0G8Q596bwndAdjYaQlAisocCw9loqoTVgLepsQO2Dim+b7dxvGrk6Nmtz6KwR2Sqi0WFHuam0hxF5Rd6jxqn2OSPWTjWLo+CrC/UN3QUpUYy6+kkZwAjwK+PB/vw1TEqJFxY29K/Sdy3C3vcf2AuQcH1BNYbhP0XuZfPoGHHtA+Gw8elN++hQ+dLh8evwEHxXTCyNQV0J+P1czXqFXXVaiBMm6B1khXUzesaim/xBTiNxXM/YJBIfjw/2y9FTFVUYw4p67dMm6eiDIxNrTfOSTx865D2Pr78tDfS4cNlz6YL6TVQNI7KOdZyahUEDl89DN199Whu+98mBqtyW181Z6i+4lViQtSNYXKxPitHdEP8/jk10OPL7xXFbrlJqqfZ+z+cixXx44pOCm0FBYUVDJHDVT0FXEpGm7JsboN3s2VbsJGZ8fEMyXiSFRPKCxMIb0fLtBYlCvWoHeTUj4oz6VQdNejTJaYqLS/fY7xvs5AttnLtbD2MRmCXEIOI7najFKxggza4JAL7gqaYCGHkrmO+WhUGYdJKg4LX42wNqPFy9GBpela+hstHDGss/sgX+jGPwLkH7rxW5BrsapoguFlMuu0Nu9pedqI9VfX/emJkN7y2hfakotpUC5GoqQk1KkMOqxk9m6AtRncJIF9c07PxqneznxQmwLQXgXV78Rq6ZugNjLI6mHG0iZJiJzvruJv77CqLR1ehzaxID2wXOBFoNtfITlV6Ch6j9ortkqll24gJbfhsn0zeLd5V+gQ0Gn117uLdNRt2zV4MXx5MvxFlEu4VJiiumPqvHvJOPp+sf9sMbxv3GqXOT/slaQLB6Y7HtUWjWsb3tQ0tllx1VLeNe5ycS0lafIrWK2mGOky2PVahj83FCQsrzNYYDBymKSozDbhJRErMZXDm9bvwYVoF3HbtEF57/SQrGlXnBYF1fxV2eteXp/9PbmADKbd+07ltawJeCvvDngLOaQXIlmdciSNrcCimzc4F9kWU/7+Ay7GpjM=
+sidebar_class_name: "post api-method"
+info_path: minatokens/minatokens-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve information about a fungible token."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/info/token"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The `info` endpoint retrieves detailed information about a specific fungible token deployed on the Mina blockchain.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["tokenAddress"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract."}},"title":"TokenInfoRequestParams"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful retrieval of token information.","content":{"application/json":{"schema":{"type":"object","required":["tokenAddress","tokenId","adminContractAddress","adminAddress","adminTokenBalance","totalSupply","isPaused","decimals","tokenSymbol","verificationKeyHash","uri","version","adminTokenSymbol","adminUri","adminVerificationKeyHash","adminVersion"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract."},"tokenId":{"type":"string","description":"The unique identifier of the token."},"adminContractAddress":{"type":"string","description":"The address of the admin contract."},"adminAddress":{"type":"string","description":"The address of the administrator."},"adminTokenBalance":{"type":"number","format":"double","description":"The token balance of the administrator."},"totalSupply":{"type":"number","format":"double","description":"The total supply of the token."},"isPaused":{"type":"boolean","description":"Indicates if the token contract is paused."},"decimals":{"type":"integer","format":"int32","description":"The number of decimal places the token uses."},"tokenSymbol":{"type":"string","description":"The symbol of the token."},"verificationKeyHash":{"type":"string","description":"The verification key hash of the token contract."},"uri":{"type":"string","description":"The URI of the token metadata."},"version":{"type":"integer","format":"int32","description":"The version number of the token contract."},"adminTokenSymbol":{"type":"string","description":"The symbol of the admin token."},"adminUri":{"type":"string","description":"The URI of the admin token metadata."},"adminVerificationKeyHash":{"type":"string","description":"The verification key hash of the admin contract."},"adminVersion":{"type":"integer","format":"int32"}},"title":"TokenState"}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

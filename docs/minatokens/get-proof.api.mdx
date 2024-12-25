@@ -1,0 +1,73 @@
+---
+id: get-proof
+title: "Check the status of a proof generation job and retrieve proofs."
+description: "The `proof` endpoint allows you to check the status of a proof generation job initiated via the `/prove` endpoint."
+sidebar_label: "Check the status of a proof generation job and retrieve proofs."
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV0tz2zYQ/is7uPRCSU7aHKqb8+qonbYeW7nU8YxXxEqERQLMYilZ0ei/dxakLMlSGjfpxdVFJIh9ffvtArs2grNohtdmzOgj5uKCNzeZsRRzdnV6HZpxQXBbcwjTWyBv6+C8AJZlWEZYhQYkQF5QPgcpCKKgNBHCFBCSDMzIE6PqgrswAeedOBSysHCYRG4HNYcF7ZT3P/qRAJM07OMjrfqmatDb9JxsRAgMcg8FxoIiuLRtBcgETGhX/Y/eZCbUnR8ja4ZmRnKhsiYzTJ8aivI62JUZrtOrY7JmKNxQZvLghbzoJ6zr0uVJyeAuKjprE/OCKtQnWdVkhiZM7iiXTm+r6NrchcnIKrY1qx/iKKpIu7yTjcLOz8ypFGjUo7cdLGRhsvoCemazyYw4KVXhr8nAZqNrTLEOPraWX56d6d+hnasmzynGaVOWK7XEjhZkk+kuBYp7i3nffAc0hyjE1uzexkkIJaE/AmLkrRqhCMuCpCB+IMQSI8QH9/tmkym4V8nrUwCTbypNTM6kbDSZiYLcPk2dd7FoH9GV6aGJ6Y9pu+1kneQNM3k5JmxyiJgDfz3b73QbVBQjzqhjc4qxdSapYopNKfuRITOuTGacUBW/Rsct4keE/N5UHNX8VEuzcBFk12NOJetbsTk2mEA6aTcZkvun1du+vxYFk3D8Ip+OFRxy4LEb2qv+vSMqpVFPOKDNMUqiw2G9XyZqqI1DXe16TMgQ5sWBYuf3mHpKX+yayE+n+sZrtNB1UeiB8wssnQXn60agRsaKhPi/7BjfxBZLgq50fpZCdTE2dBhs2n7ZdcmHeF8cx/vBYyNFYPeZLPSgicTgg4CukpdUF/aZhvvjcbjvA0+cteS3sdpA0f8gUOCCoCauXIyJ2M8x4pc/H0c8DgEq9Kstq58nd1+dqtWRF2KPJUTiBTEkd6AHMVQkhVpY6gm25OBnYBve2uyQeKZAnGD1FfHC5QSNxwW6EiclQQ8mZcjneYHO66UypION7vcgUxEXwYblc+T7JjOa5qBX4DrE5AhKYYZmsHccDOruatxyRGeEtWm4NENTiNRxOBhUzqOEOfnYz0M1wNoNFi8GRw7/7jzCW1p40hPpsZLPNA9PUPIXzcODkhv1Km/YySq5dV6732h13mgQ1zf7n68U+xbe/U27G1Na1CuTGikILbHJjMdKv973sHa9edpw6M75xQjmtEoH6fYcSFnvwy8kOhMxbPegwJcRS7lSplzuJpB391jVmryH4WDLhY06Og0pgC6/iu44qVSDJx1VJ52WvGZWi9tJASkr7xs/c0r6ToNe7f94P06tTpPe6jjrv3jZf6XGlS4VJlZ3EL15+tinyrcDxd4AceDveldM/5uhs6Oa0L0M6hKdVyRTEay7wrs2e4XX9oUw1Yt5oeU5vDbr9QQjfeBys9HlTw2xMv8mMwtkp20rET/bMliLQmk7NG9aOHtjdUK3l03L+0d9SguzlTjPc6rlH/fe7HWQiz+vxiYzk25yroJVGcaljhu4NEOT5m6VTmWY1tamRD9rcKZ7W536+xs2BNI9
+sidebar_class_name: "post api-method"
+info_path: minatokens/minatokens-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check the status of a proof generation job and retrieve proofs."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/transaction/proof"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The `proof` endpoint allows you to check the status of a proof generation job initiated via the `/prove` endpoint.
+It returns the status of the job and the proofs or tx hashes if they are ready.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["jobId"],"properties":{"jobId":{"type":"string","description":"The job ID returned by the `/prove` endpoint."}},"title":"JobId"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved job status and proofs.","content":{"application/json":{"schema":{"type":"object","properties":{"success":{"type":"boolean","description":"Indicates whether the job was successful."},"jobStatus":{"type":"string","enum":["created","started","finished","failed","used","restarted"],"description":"The current status of the job."},"error":{"type":"string","description":"Error message if the job failed."},"results":{"type":"array","items":{"type":"object","required":["success"],"properties":{"success":{"type":"boolean","description":"Indicates whether the proof generation for this transaction was successful."},"error":{"type":"string","description":"Error message if proof generation failed for this transaction."},"tx":{"type":"string","description":"The transaction data."},"status":{"type":"string","description":"The status of the transaction."},"hash":{"type":"string","description":"The transaction hash if broadcasted."}},"title":"JobResult"},"description":"Results for each transaction in the job."}},"title":"JobResults"}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

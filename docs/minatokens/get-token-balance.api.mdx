@@ -1,0 +1,72 @@
+---
+id: get-token-balance
+title: "Retrieve the balance of a specific token for an address."
+description: "The `balance` endpoint retrieves the balance of a specific fungible token for a given Mina address."
+sidebar_label: "Retrieve the balance of a specific token for an address."
+hide_title: true
+hide_table_of_contents: true
+api: eJzlV99v2zYQ/lcO97INkO0kWx+qt2RthmDYFiTuyzwDPYtni7VEqiRlxzX8vw9Hyj9iu12HDQOC5cURdfzu7rvvqOMaA8085iO8M1PragraGhxnqNgXTjfxMcdhyfB+QhWZgt8DG9VYbQI4Dk7zgj2EkqF7D3YKBL7hQk91AdPWzPSkYgh2zgam1gHBTC/YwC/aEJBSjr3v/2EwQ9uwiyHcKcxxxmEom24SMGbo+GPLPtxYtcJ8HR+1Y4V5cC1nWFgT2AR5RU1T6SJiDT54SWKNvii5JvkvrBrGHO3kAxehw01AI+wCEhIaJwEFzT5ukliuu7d7EB+cNjM8R1kHJYwIQYkBCdJREeBbG22p+q6PmyzBS95fg5yg7t4cg9DfCe+Q/1iYZamLEoLdFfawrn3cSJQ6VALb1eQhFeSeHNUeNxsxcewba3wi7eriQn6eO39si4K9n7bV1hNVQtLO079cygw75P9xUQ8adEkeuk5iFT1s6dl7MG09YYcZmraqaCI1Tz126vGg7/eEiGd56s4BVrtGPy+jJJlOQT+cE80NqW3U0ANtFlRpBdo0bYBG9MeBnf9H2nkuDXbOur8m/a2YQc3e04xBcSBdaTOL2Wvv26PGieYn+V6e5vvOUBtK6/QnVtCD1rMDYwPIKpsgWUn1XmS635+me2vdRCvFZpursuzNNwFKWjA07GrtvbbmZWZ89fo046G1UJNZbVX9MrX76lyv3pnAzlAFnt2CHcRwoAfe1hxK8bBkE2DprJmBat3WZ8fECyXijKof2S10wdAaWpCOByn0YFLZYl6UpA1YBzaUQtHTAWWyRXtQdvkS9b7JUMpsZYZrrI+BUCgxx4E2UzuY7Oa5JA+ZP9fYugpzLENofD4Y1NpQ/JL4fmHrATV6sLgcnMQav3ZveGE44CY7BvnEc/sVIL/z3O5AxhJV0TodVjGs60b/zKvrVuIfjQ9fPwrtidlDox29FBcxQy1OSiaVPqhUy9unHjW6N48Gz8O5vr+DOa/SqNx9AmLB+/ATB1jZ1sHWhgJ8nrFYJhHJw35sfvtEdVPx6eizV8NuZtkv0bHVRrKa2gjT6UBKEcd1L9GdzUoy0nI0UBHiIaBDmQaW2+0toUMgo+DX22E8EkUhCeOif3nVfyXORVY1RfV3fD6cGVmPriIHNxCzH0eOAl3vu+0/u/Z0ggn8FAZNRdpIilHK665zRonuZ4NsKa2Vj3C9npDnd67abGT5Y8tOpDvOcEFOp9ltNN5kWwmKqkV3Of6YMu0Nxb+YV20S7tEZI52VdlwXBTfhi7bjg+6//+1xKEF397XaKtnjaCmDOi0xx3jpk92xj+LaGisys5ZmYpsw5e9PHTQicA==
+sidebar_class_name: "post api-method"
+info_path: minatokens/minatokens-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve the balance of a specific token for an address."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/info/balance"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The `balance` endpoint retrieves the balance of a specific fungible token for a given Mina address.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["address"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract (optional)."},"tokenId":{"type":"string","description":"The token ID (optional)."},"address":{"type":"string","description":"The Mina address for which to retrieve the balance."}},"title":"BalanceRequestParams"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful retrieval of balance.","content":{"application/json":{"schema":{"type":"object","required":["address","balance"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract (optional)."},"tokenId":{"type":"string","description":"The token ID (optional)."},"address":{"type":"string","description":"The Mina address for which the balance was requested."},"balance":{"type":"number","nullable":true,"description":"The balance of the token for the specified address."}},"title":"BalanceResponse"}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

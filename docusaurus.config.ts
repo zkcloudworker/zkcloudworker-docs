@@ -2,6 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 import path from "node:path";
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 const config: Config = {
   title: "zkCloudWorker",
@@ -42,7 +43,25 @@ const config: Config = {
         },
       },
     ],
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "openapi", // plugin id
+        docsPluginId: "@docusaurus/preset-classic", // configured for preset-classic
+        config: {
+          minatokens: {
+            specPath: "openapi/open-api.yaml",
+            outputDir: "docs/minatokens",
+            sidebarOptions: {
+              groupPathsBy: "tagGroup",
+            },
+            showSchemas: true,
+          } satisfies OpenApiPlugin.Options,
+        },
+      },
+    ],
   ],
+  themes: ["docusaurus-theme-openapi-docs"],
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -50,6 +69,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
+          docItemComponent: "@theme/ApiItem",
         },
         blog: false,
         theme: {
