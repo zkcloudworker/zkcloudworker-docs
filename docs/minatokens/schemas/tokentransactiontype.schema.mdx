@@ -6,7 +6,7 @@ sidebar_label: "TokenTransactionType"
 hide_title: true
 hide_table_of_contents: true
 schema: true
-sample: "token:launch"
+sample: "token:mint"
 custom_edit_url: null
 ---
 
@@ -25,7 +25,7 @@ import Heading from "@theme/Heading";
 
 
 <Schema
-  schema={{"type":"string","enum":["token:launch","token:mint","token:transfer","token:bid:create","token:offer:create","token:offer:buy","token:bid:sell","token:airdrop","token:bid:withdraw","token:offer:withdraw","token:bid:whitelist","token:offer:whitelist","token:admin:whitelist"],"title":"TokenTransactionType"}}
+  schema={{"type":"string","enum":["token:mint","token:transfer"],"title":"TokenTransactionType"}}
   schemaType={"response"}
 >
   

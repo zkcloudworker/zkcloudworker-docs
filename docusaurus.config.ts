@@ -50,7 +50,7 @@ const config: Config = {
         docsPluginId: "@docusaurus/preset-classic", // configured for preset-classic
         config: {
           minatokens: {
-            specPath: "openapi/open-api.yaml",
+            specPath: "openapi/open-api-issue.yaml",
             outputDir: "docs/minatokens",
             sidebarOptions: {
               groupPathsBy: "tagGroup",
