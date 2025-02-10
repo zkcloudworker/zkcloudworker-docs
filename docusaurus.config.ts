@@ -34,8 +34,16 @@ const config: Config = {
     [
       "docusaurus-plugin-typedoc-api",
       {
-        projectRoot: path.join(__dirname, "../zkcloudworker-lib"),
-        packages: ["."],
+        projectRoot: path.join(__dirname, ""),
+        packages: [
+          "zkcloudworker-lib",
+          "silvana-lib/packages/api",
+          "silvana-lib/packages/abi",
+          "silvana-lib/packages/token",
+          "silvana-lib/packages/nft",
+          "silvana-lib/packages/storage",
+          "silvana-lib/packages/upgradable",
+        ],
         banner:
           "Start building your zkApp today with a fast cloud proving service for zkApps - zkCloudWorker!",
         typedocOptions: {
@@ -173,17 +181,12 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "apiSidebar",
           position: "left",
-          label: "MinaTokens OpenAPI",
+          label: "OpenAPI",
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
           to: "api",
-          label: "zkCloudWorker API",
-          position: "left",
-        },
-        {
-          to: "https://docs.silvana.one/api",
-          label: "Silvana API",
+          label: "Library",
           position: "left",
         },
         {
