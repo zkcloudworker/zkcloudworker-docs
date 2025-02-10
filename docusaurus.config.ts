@@ -2,6 +2,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 import path from "node:path";
+import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 const config: Config = {
   title: "zkCloudWorker",
@@ -42,7 +43,25 @@ const config: Config = {
         },
       },
     ],
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "openapi", // plugin id
+        docsPluginId: "@docusaurus/preset-classic", // configured for preset-classic
+        config: {
+          silvana: {
+            specPath: "silvana-lib/packages/api/open-api.yaml",
+            outputDir: "docs/OpenAPI",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+            showSchemas: true,
+          } satisfies OpenApiPlugin.Options,
+        },
+      },
+    ],
   ],
+  themes: ["docusaurus-theme-openapi-docs"],
   presets: [
     [
       "@docusaurus/preset-classic",
@@ -50,19 +69,71 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
+          docItemComponent: "@theme/ApiItem",
         },
         blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
-        googleTagManager: {
-          containerId: "G-JS5QHBLWPY", //'GTM-WZ4G3MFW',
+
+        gtag: {
+          trackingID: "G-JS5QHBLWPY",
+          anonymizeIP: false,
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
+    languageTabs: [
+      {
+        highlight: "bash",
+        language: "curl",
+        logoClass: "curl",
+      },
+      {
+        highlight: "javascript",
+        language: "javascript",
+        logoClass: "javascript",
+      },
+      {
+        highlight: "javascript",
+        language: "nodejs",
+        logoClass: "nodejs",
+      },
+      {
+        highlight: "python",
+        language: "python",
+        logoClass: "python",
+      },
+      {
+        highlight: "rust",
+        language: "rust",
+        logoClass: "rust",
+      },
+      {
+        highlight: "ocaml",
+        language: "ocaml",
+        logoClass: "ocaml",
+      },
+      {
+        highlight: "go",
+        language: "go",
+        logoClass: "go",
+      },
+
+      {
+        highlight: "java",
+        language: "java",
+        logoClass: "java",
+        variant: "unirest",
+      },
+      {
+        highlight: "powershell",
+        language: "powershell",
+        logoClass: "powershell",
+      },
+    ],
     // Replace with your project's social card
     image: "img/zkcloudworker-transparent-full.png",
 
@@ -94,9 +165,15 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "docsSidebar",
           position: "left",
           label: "Docs",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "apiSidebar",
+          position: "left",
+          label: "MinaTokens OpenAPI",
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -105,8 +182,8 @@ const config: Config = {
           position: "left",
         },
         {
-          to: "https://docs.minatokens.com",
-          label: "MinaTokens API",
+          to: "https://docs.silvana.one/api",
+          label: "Silvana API",
           position: "left",
         },
         {
