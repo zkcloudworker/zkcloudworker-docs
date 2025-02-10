@@ -1,3 +1,6 @@
 [submodule "silvana-lib"]
 	path = silvana-lib
 	url = https://github.com/SilvanaOne/silvana-lib
+[submodule "zkcloudworker-lib"]
+	path = zkcloudworker-lib
+	url = https://github.com/zkcloudworker/zkcloudworker-lib
