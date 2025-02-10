@@ -49,11 +49,11 @@ const config: Config = {
         id: "openapi", // plugin id
         docsPluginId: "@docusaurus/preset-classic", // configured for preset-classic
         config: {
-          minatokens: {
-            specPath: "openapi/open-api-issue.yaml",
-            outputDir: "docs/minatokens",
+          silvana: {
+            specPath: "silvana-lib/packages/api/open-api.yaml",
+            outputDir: "docs/OpenAPI",
             sidebarOptions: {
-              groupPathsBy: "tagGroup",
+              groupPathsBy: "tag",
             },
             showSchemas: true,
           } satisfies OpenApiPlugin.Options,
@@ -75,14 +75,65 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
-        googleTagManager: {
-          containerId: "G-JS5QHBLWPY", //'GTM-WZ4G3MFW',
+
+        gtag: {
+          trackingID: "G-JS5QHBLWPY",
+          anonymizeIP: false,
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
+    languageTabs: [
+      {
+        highlight: "bash",
+        language: "curl",
+        logoClass: "curl",
+      },
+      {
+        highlight: "javascript",
+        language: "javascript",
+        logoClass: "javascript",
+      },
+      {
+        highlight: "javascript",
+        language: "nodejs",
+        logoClass: "nodejs",
+      },
+      {
+        highlight: "python",
+        language: "python",
+        logoClass: "python",
+      },
+      {
+        highlight: "rust",
+        language: "rust",
+        logoClass: "rust",
+      },
+      {
+        highlight: "ocaml",
+        language: "ocaml",
+        logoClass: "ocaml",
+      },
+      {
+        highlight: "go",
+        language: "go",
+        logoClass: "go",
+      },
+
+      {
+        highlight: "java",
+        language: "java",
+        logoClass: "java",
+        variant: "unirest",
+      },
+      {
+        highlight: "powershell",
+        language: "powershell",
+        logoClass: "powershell",
+      },
+    ],
     // Replace with your project's social card
     image: "img/zkcloudworker-transparent-full.png",
 
@@ -114,9 +165,15 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "docsSidebar",
           position: "left",
           label: "Docs",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "apiSidebar",
+          position: "left",
+          label: "MinaTokens OpenAPI",
         },
         //{to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -125,8 +182,8 @@ const config: Config = {
           position: "left",
         },
         {
-          to: "https://docs.minatokens.com",
-          label: "MinaTokens API",
+          to: "https://docs.silvana.one/api",
+          label: "Silvana API",
           position: "left",
         },
         {

@@ -1,0 +1,72 @@
+---
+id: get-token-balance
+title: "Retrieve the balance of a specific token for an address."
+description: "The `balance` endpoint retrieves the balance of a specific fungible token for a given Mina address."
+sidebar_label: "Retrieve the balance of a specific token for an address."
+hide_title: true
+hide_table_of_contents: true
+api: eJzlWG1v2zYQ/isEv2wD/JKkbbLom5M4dZom9WKncOIF6Fk6S4wlUiYpv8L/fThKfontdi3WDQjmL7Yk8uHdc8+d7jznFkLDvS6/kn2lE7BCSf5U4gEaX4vUXXq8HSH70oMYpI9fGMogVUJaptFqgSM0zEbIiudM9Rkwk6Iv+sJn/UyGohcjs2qAkvWVZsBCMULJboQEBkGg0ZjKn5KXuEpROxOuAu7xEG2bNp3lwLzENQ4zNPZMBVPuzd2l0Bhwz+oMS9xX0qK09AjSNBa+w6o+G3Jizo0fYQL0y05T5B5XvWf0bYGbA3V5YRCRkGoyyAo0bhPZUiuerkGM1UKGfB9lBRQxQgTlDJCRGnzLflVuLcS/VfiilMOT39+DnENdXWyDwI+Yt8m/C8w4En7ErFoFdjOuFb4gK4WNCbaIyV0ekCZoSAwZgBNI0jgnLET7cpkLQpYkoKfc4/V8aa6XpXiKCPMSH0Gc4S7v/Oz4aKiy6xt7499PoDc4ORqNH1sn9uFN56Huw+F58zrsNPszed64F5+fm6f148nkjxnfIMdhJOpx2Os038zuLi7F58ifNY47nVnj9ug5qg+Pg/ZpZ/j41mr/8OF31Zme1z6E13zhPqQXkyppcjePDg7o6yW/rcz30Zh+Fi/JhJg8XZH5k9Va4gXy/1i3GzVoDGYpJQzcCUt61ifILOmh5iUusziGHsk6LyO7J26UtjUhdDJdFaUOg1Ut258puWS+niSFZL6RJGYtqnW+FLD/RsKsQssnH8Z4Ozmv67uxeHfRb5yPT9Ja0r4V6npy8X7YmFwkd6LfqR/3Pg6bs4ZtJD8l3zbCRkFapt/bfRl3BsEy5KzMhBxBLAImZJpZllJ9Qova/KPEe5lXqLXSf6/YOi1jCRoDIbIALYhYyNBJRxiTbRVWt3wtlsLfw11/7yVkNlJazDBgZZYZ1Ewqy+guSktekfRfpbtvdt29VLonggDl0tdAoZG/WBbBCFmKOhHGCCVfp8dHp7set5ViCcjpUtWvU7vv9uXqlbSoJcTMoB6hZs4cVmZGJWgjOmGM0rKxVjJkQaaXZxZMvFIi9qi6hXokfGSZhBEI9xZiZdaLlT/wIxCSKc2UjYiiyQZltEUYFqjxa9T7osQpzIpeLKlyzV4KNuIerwrZV9Xeqt/P5UHzyZxnOuYej6xNjVetJkKCez2Ziq+SKqSiOjqs7tjqWoUbEFKi5YvSNkqAI4m28iNgF27LHqwZDtR3gDziQK1AnshFP9PCTp2PtVRc47SWERndp83HLYphHqbNRatYgbvJS1zQIRFCkLc2kNDTSRlSUR64BS/NqTWv2ACn+VxWvE+ceirsPVo2VZlmyzVg2dfpdzEnxd2tZ7SiednTk6yktW4xVrdge9WCvOorB1OIqiXiEUhgn1KUtebVXrfIJUGFBnzrSoqwUd47Xi5nUjdeGgYyYLeXbVdgSW85xkHlsHJAh5NGE3CpVPB5t2c+2pp7N8ZduW4Mt+ycr1P3P5uxC8FYnNhqGoOQ5KKT8rxIw25O94uRIqI89bp8Pu+BwXsdLxZ0e5ghtandJ2o/tci76O7TorSUIKmadOfx89zTcpvOX3WruwWLMivfUfN9TO031z5tlJLmp1abjC7+HEhUQHs0jGlkgjH3uPuHgXa7PHL35jwGGWYQ0tockz5/AQSV+QA=
+sidebar_class_name: "post api-method"
+info_path: OpenAPI/silvana-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve the balance of a specific token for an address."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/info/balance"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The `balance` endpoint retrieves the balance of a specific fungible token for a given Mina address.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["address"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract (optional)."},"tokenId":{"type":"string","description":"The token ID (optional)."},"address":{"type":"string","description":"The Mina address for which to retrieve the balance."}},"title":"BalanceRequestParams"},"examples":{"getBalanceRequest":{"summary":"Example of a balance request","value":{"tokenAddress":"B62qouKMtMcUxabk72vwZS7tY3XYEca1CPKgXPfznCHUiVjP9E6xxQz","address":"B62qmoZqbXP3zRDFiVhczH6XXzHN2jhEq6dT9XqZ4trc1Y8oXyCAJgK"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successful retrieval of balance.","content":{"application/json":{"schema":{"type":"object","required":["address","balance"],"properties":{"tokenAddress":{"type":"string","description":"The address of the token contract (optional)."},"tokenId":{"type":"string","description":"The token ID (optional)."},"address":{"type":"string","description":"The Mina address for which the balance was requested."},"balance":{"type":"number","nullable":true,"description":"The balance of the token for the specified address."}},"title":"BalanceResponse"},"examples":{"getBalanceSuccess":{"summary":"Example of a successful balance response","value":{"tokenAddress":"B62qouKMtMcUxabk72vwZS7tY3XYEca1CPKgXPfznCHUiVjP9E6xxQz","tokenId":"xJweNxCErRwi5DfHCw7pAmTNioKxDGqHxDmRifXE6bLqPzHtHm","address":"B62qmoZqbXP3zRDFiVhczH6XXzHN2jhEq6dT9XqZ4trc1Y8oXyCAJgK","balance":null}}}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

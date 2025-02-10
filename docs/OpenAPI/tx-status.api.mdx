@@ -1,0 +1,72 @@
+---
+id: tx-status
+title: "Retrieve the status of a transaction by its hash."
+description: "The `tx-status` endpoint allows you to check the current status of a transaction on the Mina blockchain by providing the transaction hash. It returns whether the transaction has been applied, failed, or is still pending."
+sidebar_label: "Retrieve the status of a transaction by its hash."
+hide_title: true
+hide_table_of_contents: true
+api: eJzdWEtz20YM/isYXHqhJDtxOlPdnMROnEwax1Km07ieyYqExLXIXWYX1MMa/fcOlqQeNp24iS+uLpJIAAt8+AACXCGricf+JQ6dMl7FrK3BqwgT8rHTRfjbx2FK8JUXHc+KS/8VyCSF1YZBZZmde1jaEthCnFI8BU4J4tI5MgyVAtgxKODtCWBNEPugjYJRZuNpnCptYLSEwtmZTrSZBIFdnVT5tAtnDI64dMbDPCVOybUJwojIgCqKTFMSwVjpTL6tA+3Bs84yKMjIMd1/DEZoC3JKlM8S7CMvBsFvjNDRt5I8v7TJEvur8Fc7SrDPrqQIY2uYDMutcFgcjPSuvcC2Qh+nlCv5xcuCsI92dE0x13YrQ5cogQnmhRM3WJMXjXB1q+nZaTPBtszcBmk/FZsUdHG9jpA1Z2JvJ99VsOfKqdzjOkJaqLzIKi8aKC4qHEJQZZ4rt8Q+nlSCdXobekCNGUY4U1lJ22DwxbvyRP317dVU65ub6+Pn+bWbqRfp9d9kU/3m/afTeDz+nHxZuJN3H44Wr7VL3x/iOnwEMl9Y4yu/nh0cyNc+GIMyjsn7cZllS2GJ0zSjZA+fysUu/kLqHitNXcG68qfNAJkyF3bUPMUIazpjhBWfMcLSTI2d31Ox2+K7VSHhZHLOul/wPCFWOvM/RijU91vSk5R3hLVhmpCTYKzLFVeXfj9qdSAN2k0kwSBI/pQ2LZ1iAyy9fXBygnhVPbunBFPh1+DeRP0I+K0h1jl5VnnxszhsDLTYXjw82NZ8bpreT4S4a1CbPc/Wbdo1d9qp+b0mdV97qiv/O+3Jb3rDXqeqWspjtaptPW+KteleR20N66VKmm4JHdBmpjKdgDZFyVBIPyYm95jd6oFFfyJikJP3atJkqyk07X1J+2kK4hcNlk28h3fj/WxUyal1+oYS6EDpyYGxDHKVDEtUlDzRcJ/fDffUupFOEjJNrIklb35jSNWMoCCXa+8D6Z9ixM/+uBvx0FrIlVk2rH6a3H3RVqtnhskZlYEnNyMHwR3ogLc5cSonzGXinTtrJpCUrjmzRuKJAtHC6gG5mY4JSqNmSmdqlBF0dqd468CGwZwWO5CJivaQ2PlT5Ps6QkmzlfWgsGG4LRTLg6K38/Tq+WZvqEgim9UKS5dhH1Pmwvd7vVwbxXZKxndjm/dUoXuzw94dj8Nq9EFpY4hxHd22ktDMEHf/i7HXQaXF1g1N7QOMfKGp3Ri5khDj0mlehhiPC/2elselQHJ5tXt7IJmskrUrtMmYChcxQi2HpKSSMA0ZlcvdRUcVujMNAvvuHJ+fwZSWMLYOmqdK4FAX3hDLSuqgkVEM98MfMi+8u9juevXosDMP1MRai59jG/yvyTLQ2UwZBR8LMsfnZ62OipMy6TnhibQKzWm1/Z6WZqKlhIbBKVAmgT9Ph6FxCoMqGwfdw+6BHC7cy1UokRqhi3rP2V/2bu3boyVo9vWwd8vB1bYW//+Lfk06pgX3ikxpI6CGcljVBX2JO0dsJ7qrCFOp+/4lrlYj5emzy9ZrufytJBk3L69kiHRa+mGogaghs9SHMLiPryqgO0PxYjNz3m2AUqOVxnEcU8Hflb3aaU3nHwdDjHBUv67IbSI6Ts3llYOaYx/Dyw7RDhUZrq0wU2ZSqonIVjbl8y/QUmGY
+sidebar_class_name: "post api-method"
+info_path: OpenAPI/silvana-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve the status of a transaction by its hash."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/transaction/status"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The `tx-status` endpoint allows you to check the current status of a transaction on the Mina blockchain by providing the transaction hash. It returns whether the transaction has been applied, failed, or is still pending.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["hash"],"properties":{"hash":{"type":"string","description":"The transaction hash to check the status of."}},"title":"TransactionStatusParams"},"examples":{"txStatusRequest":{"summary":"Example of a tx-status request","value":{"hash":"5JuEaWqCkiizzjA3mjrva5hjYeohiGKQFcffUdZxrEJM4xDirhK1"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully retrieved transaction status.","content":{"application/json":{"schema":{"type":"object","properties":{"hash":{"type":"string","description":"The transaction hash."},"status":{"type":"string","enum":["pending","applied","failed","unknown"],"description":"The status of the transaction."},"error":{"type":"string","description":"The transaction hash."},"details":{"type":"object","properties":{"blockHeight":{"type":"integer","format":"int64","description":"The height of the block containing the transaction."},"stateHash":{"type":"string","description":"The state hash of the block."},"blockStatus":{"type":"string","description":"The status of the block."},"timestamp":{"type":"integer","format":"int64","description":"The timestamp of the block."},"txHash":{"type":"string","description":"The transaction hash."},"txStatus":{"type":"string","description":"The status of the transaction in the block."}},"description":"The details of the transaction."}},"title":"TransactionStatus"},"examples":{"txStatusSuccess":{"summary":"Example of a successful tx-status response","value":{"hash":"5JuEaWqCkiizzjA3mjrva5hjYeohiGKQFcffUdZxrEJM4xDirhK1","status":"applied"}}}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
