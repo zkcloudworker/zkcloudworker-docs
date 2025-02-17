@@ -4,11 +4,11 @@ const sidebar: SidebarsConfig = {
   apisidebar: [
     {
       type: "doc",
-      id: "OpenAPI/silvana-openapi",
+      id: "OpenAPI/minatokens-api",
     },
     {
       type: "category",
-      label: "FungibleToken",
+      label: "Fungible Token",
       items: [
         {
           type: "doc",
@@ -158,6 +158,24 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
+      label: "NFT",
+      items: [
+        {
+          type: "doc",
+          id: "OpenAPI/launch-nft-collection",
+          label: "Deploy a new NFT Collection contract.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/mint-nft",
+          label: "Mint new NFT to a specified address.",
+          className: "api-method post",
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Faucet",
       items: [
         {
@@ -270,8 +288,20 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/nfttransactiontype",
+          label: "NftTransactionType",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/tokentransactionbaseparams",
           label: "TokenTransactionBaseParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nfttransactionbaseparams",
+          label: "NftTransactionBaseParams",
           className: "schema",
         },
         {
@@ -282,14 +312,56 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/deployednftcollectiontransactionbaseparams",
+          label: "DeployedNftCollectionTransactionBaseParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/launchtokentransactionbaseparams",
           label: "LaunchTokenTransactionBaseParams",
           className: "schema",
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/collectiondata",
+          label: "CollectionData",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftmetadata",
+          label: "NftMetadata",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftdata",
+          label: "NftData",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftmintparams",
+          label: "NftMintParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/launchnftcollectiontransactionbaseparams",
+          label: "LaunchNftCollectionTransactionBaseParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/tokenminttransactionparams",
           label: "TokenMintTransactionParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftminttransactionparams",
+          label: "NftMintTransactionParams",
           className: "schema",
         },
         {
@@ -378,8 +450,26 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/launchnftcollectionstandardadminparams",
+          label: "LaunchNftCollectionStandardAdminParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/launchtokenadvancedadminparams",
           label: "LaunchTokenAdvancedAdminParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/advancednftcollectionadmindata",
+          label: "AdvancedNftCollectionAdminData",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/launchnftcollectionadvancedadminparams",
+          label: "LaunchNftCollectionAdvancedAdminParams",
           className: "schema",
         },
         {
@@ -408,8 +498,20 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/nfttransactionparams",
+          label: "NftTransactionParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/tokentransaction",
           label: "TokenTransaction",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nfttransaction",
+          label: "NftTransaction",
           className: "schema",
         },
         {
@@ -422,6 +524,12 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "OpenAPI/schemas/provetokentransaction",
           label: "ProveTokenTransaction",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/provenfttransaction",
+          label: "ProveNftTransaction",
           className: "schema",
         },
         {
