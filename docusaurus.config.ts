@@ -58,8 +58,8 @@ const config: Config = {
         docsPluginId: "@docusaurus/preset-classic", // configured for preset-classic
         config: {
           silvana: {
-            //specPath: "silvana-lib/packages/api/open-api.yaml",
-            specPath: "openapi/open-api.yaml",
+            specPath: "silvana-lib/packages/api/open-api.yaml",
+            //specPath: "openapi/open-api.yaml",
             outputDir: "docs/OpenAPI",
             sidebarOptions: {
               groupPathsBy: "tag",
