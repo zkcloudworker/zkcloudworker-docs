@@ -54,7 +54,7 @@ const config: Config = {
     [
       "docusaurus-plugin-openapi-docs",
       {
-        id: "openapi", // plugin id
+        id: "openapi", // plugin  id
         docsPluginId: "@docusaurus/preset-classic", // configured for preset-classic
         config: {
           silvana: {
