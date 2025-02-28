@@ -23,20 +23,20 @@
     "@docusaurus/preset-classic": "^3.7.0",
     "@mdx-js/react": "^3.1.0",
     "clsx": "^2.1.1",
-    "docusaurus-plugin-openapi-docs": "^4.3.3",
-    "docusaurus-theme-openapi-docs": "^4.3.3",
+    "docusaurus-plugin-openapi-docs": "^4.3.5",
+    "docusaurus-theme-openapi-docs": "^4.3.5",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.15",
-    "swagger-ui-react": "^5.18.3"
+    "swagger-ui-react": "^5.20.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.7.0",
     "@docusaurus/tsconfig": "^3.7.0",
     "@docusaurus/types": "^3.7.0",
     "docusaurus-plugin-typedoc-api": "^4.4.0",
-    "typedoc": "^0.27.7",
+    "typedoc": "^0.27.9",
     "typescript": "~5.7.3",
     "yaml-loader": "^0.8.1"
   },

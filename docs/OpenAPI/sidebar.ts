@@ -4,11 +4,11 @@ const sidebar: SidebarsConfig = {
   apisidebar: [
     {
       type: "doc",
-      id: "OpenAPI/minatokens-api",
+      id: "OpenAPI/silvana-openapi",
     },
     {
       type: "category",
-      label: "Fungible Token",
+      label: "FungibleToken",
       items: [
         {
           type: "doc",
@@ -120,6 +120,12 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/send-transaction",
+          label: "Send a transaction to the Mina blockchain.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/tx-status",
           label: "Retrieve the status of a transaction by its hash.",
           className: "api-method post",
@@ -138,6 +144,12 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/get-nft-info",
+          label: "Retrieve NFT Info",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/get-nft-v-2-info",
           label: "Retrieve NFT Info",
           className: "api-method post",
@@ -152,6 +164,12 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "OpenAPI/get-token-balance",
           label: "Retrieve the balance of a specific token for an address.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/get-nonce",
+          label: "Retrieve the nonce for an address",
           className: "api-method post",
         },
       ],
@@ -216,6 +234,18 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/noncerequestparams",
+          label: "NonceRequestParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nonceresponse",
+          label: "NonceResponse",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/errorresponse",
           label: "ErrorResponse",
           className: "schema",
@@ -236,6 +266,18 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "OpenAPI/schemas/jobresult",
           label: "JobResult",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/sendtransactionparams",
+          label: "SendTransactionParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/sendtransactionreply",
+          label: "SendTransactionReply",
           className: "schema",
         },
         {
@@ -272,6 +314,24 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "OpenAPI/schemas/nftrequestparams",
           label: "NFTRequestParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftv-2-requestanswer",
+          label: "NftV2RequestAnswer",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftinfo",
+          label: "NFTInfo",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/collectioninfo",
+          label: "CollectionInfo",
           className: "schema",
         },
         {
@@ -522,6 +582,12 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/nfttransactions",
+          label: "NftTransactions",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/provetokentransaction",
           label: "ProveTokenTransaction",
           className: "schema",
@@ -536,6 +602,12 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "OpenAPI/schemas/provetokentransactions",
           label: "ProveTokenTransactions",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/provenfttransactions",
+          label: "ProveNftTransactions",
           className: "schema",
         },
         {

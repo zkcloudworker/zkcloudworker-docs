@@ -1,0 +1,72 @@
+---
+id: send-transaction
+title: "Send a transaction to the Mina blockchain."
+description: "The `send` endpoint allows you to send a transaction to the Mina blockchain."
+sidebar_label: "Send a transaction to the Mina blockchain."
+hide_title: true
+hide_table_of_contents: true
+api: eJzVV99v20YM/lcIvuxFtpNue5je0rUZgqFrELsYsMxAaYm2rpbu1DvKjmv4fy94kuOfLVK0QBG/2L4jP/LjfTxRaxSaBUzvceTJBsrEOIvjBHMOmTd1/JviqGB4H9jm74FtXjtjBags3TLAyjUgDnQTCGSHoqtSMLwxlmBSumyeFWRs/3+LCbqaPanVTY4pqvN+/AQ9f2w4yEuXrzBdx7/Gc46p+IYTzJwVtqJbVNelySLW4EPQbNcYsoIr0l+yqhlTdJMPnEmH2wLdoxwyrr0mJYZDdNzb3OEE8cbO8Fx5jpgrpT5uNgmKkVJ9h4ckb8lTFXCzURvPoXY2tKFfXFzo12GIYZNlHMK0KcuVgst+wD7+oJKENsppOQoKxbfXQb3ATCE8Jt/HTYJBSJrwNLjWFtw0aumAsyJ1+e6gJs6VTPYE69+CpWB/jAJLCl05W7ValqXz84jO3jt/rmSH0K/VDHIWMmVQuscxpmRK/roa7rguV50Yfjt3/i8ph64poAfGLqg0ORhbNwK1SomFffguIRye+DH5L5xRS77iEGjGXRGMncUamBAaPqQdze86tT/yvTzl+85SI4Xz5hPn0IMmsAfrBHSVrSgrLemzpPvrKd1r5ycmz9luueaOg/1FoKAFQ82+MiF8b6f/NMYv/jhlPHIOKrKrraqfp3Z/P9erN1bYWyohsF+wh5gO9CC4iqXQCEu9cZbe2Rnkjd/G7CrxTAtxRtVD9guTMTSWFmRKmpQMvb1ZAJwHF69lftgrmbqYALlbPke9bxLUY3Y62NQuxERICkxxsPdQGOiAgAm2EtEJbI2NLzHFQqQO6WBQGUvi5mxDP3PVgGozWFwOTvKN49UbMtay4CY5Rsl5YVn63wL2KrqcwfrEc/cEkP947h5Bxkoxa7yRVeR4VZu/eXXVaEHux/vbQz3H9qj2jR7Pi+IiJmg0SMGUs8cELVW6+9Cj2vTm0eAwnavbG5jzCqbOw/aZEhXUh79YdH71sLUhgS+XP567qu5uN5y+fqCqViEcTYxbdW003amL+9snvykXZAne1myvbm/O5qu5Gr1FFE/vCyNFO0hfN3ZmtI9GMTcgm8M/16N4e6qQWoyL/mX/QoOrACuKfdIVavjkQf04s/WuE3/8C0F3yMIPMqhLMlazj/Jbd+1zOLAn8aVBB9VCeyy9x/V6QoHf+XKz0eWPDXuV3DjBBXmjd09UXLKVjqpR9ZLiny2t3khzUPOyaQV3dNloR7QeV1nGtXzVdrx3Ddy+HY4wwUn3NlO5XH08LXX8piWmGF+J1DvqP66tsSQ7a2imti2mfj4D2QLRVQ==
+sidebar_class_name: "post api-method"
+info_path: OpenAPI/silvana-openapi
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send a transaction to the Mina blockchain."}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/transaction/send"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+The `send` endpoint allows you to send a transaction to the Mina blockchain.
+
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["transaction"],"properties":{"transaction":{"type":"string","description":"The transaction to send."}},"title":"SendTransactionParams"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Successfully sent transaction.","content":{"application/json":{"schema":{"type":"object","required":["success"],"properties":{"hash":{"type":"string","description":"The transaction hash if successful."},"status":{"type":"string","description":"The status of the transaction."},"success":{"type":"boolean","description":"Whether the transaction was sent to the network."},"error":{"type":"object","description":"Error details if the transaction failed."}},"title":"SendTransactionReply"}}}},"400":{"description":"Bad request - invalid input parameters.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"401":{"description":"Unauthorized - user not authenticated.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"403":{"description":"Forbidden - user doesn't have permission.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"429":{"description":"Too many requests.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"500":{"description":"Internal server error - something went wrong during the request.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}},"503":{"description":"Service unavailable - blockchain or other external service is down.","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","description":"Error message detailing the issue."}},"title":"ErrorResponse"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
