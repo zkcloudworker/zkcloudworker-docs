@@ -43,6 +43,9 @@ const config: Config = {
           "silvana-lib/packages/nft",
           "silvana-lib/packages/storage",
           "silvana-lib/packages/upgradable",
+          "silvana-lib/packages/mina-utils",
+          "silvana-lib/packages/mina-prover",
+          "silvana-lib/packages/prover",
         ],
         banner:
           "Start building your zkApp today with a fast cloud proving service for zkApps - zkCloudWorker!",

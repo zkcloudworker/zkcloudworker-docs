@@ -190,6 +190,30 @@ const sidebar: SidebarsConfig = {
           label: "Mint new NFT to a specified address.",
           className: "api-method post",
         },
+        {
+          type: "doc",
+          id: "OpenAPI/transfer-nft",
+          label: "Transfer NFT to a specified address.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/approve-nft",
+          label: "Approve a specified address to transfer NFT.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/sell-nft",
+          label: "Sell NFT at a specified price by creating a Offer contract.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/buy-nft",
+          label: "Buy NFT.",
+          className: "api-method post",
+        },
       ],
     },
     {
@@ -378,6 +402,12 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/deployednfttransactionbaseparams",
+          label: "DeployedNftTransactionBaseParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/launchtokentransactionbaseparams",
           label: "LaunchTokenTransactionBaseParams",
           className: "schema",
@@ -402,6 +432,30 @@ const sidebar: SidebarsConfig = {
         },
         {
           type: "doc",
+          id: "OpenAPI/schemas/nfttransferparams",
+          label: "NftTransferParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftapproveparams",
+          label: "NftApproveParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftsellparams",
+          label: "NftSellParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftbuyparams",
+          label: "NftBuyParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
           id: "OpenAPI/schemas/nftmintparams",
           label: "NftMintParams",
           className: "schema",
@@ -422,6 +476,30 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "OpenAPI/schemas/nftminttransactionparams",
           label: "NftMintTransactionParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nfttransfertransactionparams",
+          label: "NftTransferTransactionParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftapprovetransactionparams",
+          label: "NftApproveTransactionParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftselltransactionparams",
+          label: "NftSellTransactionParams",
+          className: "schema",
+        },
+        {
+          type: "doc",
+          id: "OpenAPI/schemas/nftbuytransactionparams",
+          label: "NftBuyTransactionParams",
           className: "schema",
         },
         {

@@ -1,12 +1,12 @@
 ---
-id: nfttransactiontype
-title: "NftTransactionType"
+id: nftbuyparams
+title: "NftBuyParams"
 description: ""
-sidebar_label: "NftTransactionType"
+sidebar_label: "NftBuyParams"
 hide_title: true
 hide_table_of_contents: true
 schema: true
-sample: "nft:launch"
+sample: {"buyer":"string"}
 custom_edit_url: null
 ---
 
@@ -16,7 +16,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"NftTransactionType"}
+  children={"NftBuyParams"}
 >
 </Heading>
 
@@ -25,7 +25,7 @@ import Heading from "@theme/Heading";
 
 
 <Schema
-  schema={{"type":"string","enum":["nft:launch","nft:mint","nft:transfer","nft:approve","nft:sell","nft:buy"],"title":"NftTransactionType"}}
+  schema={{"type":"object","properties":{"buyer":{"type":"string","description":"The address of the buyer"}},"title":"NftBuyParams"}}
   schemaType={"response"}
 >
   
